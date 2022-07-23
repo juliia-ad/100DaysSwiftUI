@@ -1,6 +1,7 @@
 # 100DaysSwiftUI
 **My projects from the 100 Days of SwiftUI challenge.**
 
-- Animations: Project 6
-- ExpensesApp: Project 7
-- Moonshot: Project 8
+- Project 6: Animations
+- Project 7: ExpensesApp
+- Project 8: Moonshot
+
