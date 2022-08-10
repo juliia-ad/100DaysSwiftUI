@@ -7,32 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A326639D289FC7CA00117AE6 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326639C289FC7CA00117AE6 /* HabitTrackerApp.swift */; };
-		A326639F289FC7CA00117AE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326639E289FC7CA00117AE6 /* ContentView.swift */; };
-		A32663A1289FC7CC00117AE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32663A0289FC7CC00117AE6 /* Assets.xcassets */; };
-		A32663A4289FC7CC00117AE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32663A3289FC7CC00117AE6 /* Preview Assets.xcassets */; };
-		A32663AB289FC87A00117AE6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32663AA289FC87A00117AE6 /* Model.swift */; };
-		A32663AF289FCA2100117AE6 /* DetailHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32663AE289FCA2100117AE6 /* DetailHabitView.swift */; };
-		A32663B1289FCB0000117AE6 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32663B0289FCB0000117AE6 /* Daily.swift */; };
-		A3EAF8B628A188BA00D76182 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EAF8B528A188BA00D76182 /* HabitsView.swift */; };
-		A3F5B7F228A10D490089E0B7 /* AddHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F5B7F128A10D490089E0B7 /* AddHabit.swift */; };
+		A31995A3288879B400EFE1A9 /* AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31995A2288879B400EFE1A9 /* AnimationsApp.swift */; };
+		A31995A5288879B400EFE1A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31995A4288879B400EFE1A9 /* ContentView.swift */; };
+		A31995A7288879B600EFE1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31995A6288879B600EFE1A9 /* Assets.xcassets */; };
+		A31995AA288879B600EFE1A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31995A9288879B600EFE1A9 /* Preview Assets.xcassets */; };
+		A31995B128887DAC00EFE1A9 /* TapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31995B028887DAC00EFE1A9 /* TapButton.swift */; };
+		A3D2FEE5288AC8C6002E2FC5 /* LetterAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2FEE4288AC8C6002E2FC5 /* LetterAnimations.swift */; };
+		A3D2FEE7288AD01A002E2FC5 /* CustomTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2FEE6288AD01A002E2FC5 /* CustomTransitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A3266399289FC7CA00117AE6 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A326639C289FC7CA00117AE6 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
-		A326639E289FC7CA00117AE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A32663A0289FC7CC00117AE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A32663A3289FC7CC00117AE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A32663AA289FC87A00117AE6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		A32663AE289FCA2100117AE6 /* DetailHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHabitView.swift; sourceTree = "<group>"; };
-		A32663B0289FCB0000117AE6 /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
-		A3EAF8B528A188BA00D76182 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
-		A3F5B7F128A10D490089E0B7 /* AddHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabit.swift; sourceTree = "<group>"; };
+		A319959F288879B400EFE1A9 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31995A2288879B400EFE1A9 /* AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsApp.swift; sourceTree = "<group>"; };
+		A31995A4288879B400EFE1A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A31995A6288879B600EFE1A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31995A9288879B600EFE1A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A31995B028887DAC00EFE1A9 /* TapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapButton.swift; sourceTree = "<group>"; };
+		A3D2FEE4288AC8C6002E2FC5 /* LetterAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterAnimations.swift; sourceTree = "<group>"; };
+		A3D2FEE6288AD01A002E2FC5 /* CustomTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A3266396289FC7CA00117AE6 /* Frameworks */ = {
+		A319959C288879B400EFE1A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,90 +38,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A3266390289FC7CA00117AE6 = {
+		A3199596288879B400EFE1A9 = {
 			isa = PBXGroup;
 			children = (
-				A326639B289FC7CA00117AE6 /* HabitTracker */,
-				A326639A289FC7CA00117AE6 /* Products */,
+				A31995A1288879B400EFE1A9 /* Animations */,
+				A31995A0288879B400EFE1A9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A326639A289FC7CA00117AE6 /* Products */ = {
+		A31995A0288879B400EFE1A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3266399289FC7CA00117AE6 /* HabitTracker.app */,
+				A319959F288879B400EFE1A9 /* Animations.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A326639B289FC7CA00117AE6 /* HabitTracker */ = {
+		A31995A1288879B400EFE1A9 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				A326639C289FC7CA00117AE6 /* HabitTrackerApp.swift */,
-				A326639E289FC7CA00117AE6 /* ContentView.swift */,
-				A32663B2289FCB0600117AE6 /* Views */,
-				A32663AA289FC87A00117AE6 /* Model.swift */,
-				A32663A0289FC7CC00117AE6 /* Assets.xcassets */,
-				A32663A2289FC7CC00117AE6 /* Preview Content */,
+				A31995A2288879B400EFE1A9 /* AnimationsApp.swift */,
+				A31995A4288879B400EFE1A9 /* ContentView.swift */,
+				A31995B028887DAC00EFE1A9 /* TapButton.swift */,
+				A3D2FEE4288AC8C6002E2FC5 /* LetterAnimations.swift */,
+				A3D2FEE6288AD01A002E2FC5 /* CustomTransitions.swift */,
+				A31995A6288879B600EFE1A9 /* Assets.xcassets */,
+				A31995A8288879B600EFE1A9 /* Preview Content */,
 			);
-			path = HabitTracker;
+			path = Animations;
 			sourceTree = "<group>";
 		};
-		A32663A2289FC7CC00117AE6 /* Preview Content */ = {
+		A31995A8288879B600EFE1A9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				A32663A3289FC7CC00117AE6 /* Preview Assets.xcassets */,
+				A31995A9288879B600EFE1A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A32663B2289FCB0600117AE6 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A32663B0289FCB0000117AE6 /* Daily.swift */,
-				A3EAF8B528A188BA00D76182 /* HabitsView.swift */,
-				A3F5B7F128A10D490089E0B7 /* AddHabit.swift */,
-				A32663AE289FCA2100117AE6 /* DetailHabitView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3266398289FC7CA00117AE6 /* HabitTracker */ = {
+		A319959E288879B400EFE1A9 /* Animations */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A32663A7289FC7CC00117AE6 /* Build configuration list for PBXNativeTarget "HabitTracker" */;
+			buildConfigurationList = A31995AD288879B600EFE1A9 /* Build configuration list for PBXNativeTarget "Animations" */;
 			buildPhases = (
-				A3266395289FC7CA00117AE6 /* Sources */,
-				A3266396289FC7CA00117AE6 /* Frameworks */,
-				A3266397289FC7CA00117AE6 /* Resources */,
+				A319959B288879B400EFE1A9 /* Sources */,
+				A319959C288879B400EFE1A9 /* Frameworks */,
+				A319959D288879B400EFE1A9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HabitTracker;
-			productName = HabitTracker;
-			productReference = A3266399289FC7CA00117AE6 /* HabitTracker.app */;
+			name = Animations;
+			productName = Animations;
+			productReference = A319959F288879B400EFE1A9 /* Animations.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A3266391289FC7CA00117AE6 /* Project object */ = {
+		A3199597288879B400EFE1A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					A3266398289FC7CA00117AE6 = {
+					A319959E288879B400EFE1A9 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = A3266394289FC7CA00117AE6 /* Build configuration list for PBXProject "HabitTracker" */;
+			buildConfigurationList = A319959A288879B400EFE1A9 /* Build configuration list for PBXProject "Animations" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,47 +119,45 @@
 				en,
 				Base,
 			);
-			mainGroup = A3266390289FC7CA00117AE6;
-			productRefGroup = A326639A289FC7CA00117AE6 /* Products */;
+			mainGroup = A3199596288879B400EFE1A9;
+			productRefGroup = A31995A0288879B400EFE1A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3266398289FC7CA00117AE6 /* HabitTracker */,
+				A319959E288879B400EFE1A9 /* Animations */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A3266397289FC7CA00117AE6 /* Resources */ = {
+		A319959D288879B400EFE1A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32663A4289FC7CC00117AE6 /* Preview Assets.xcassets in Resources */,
-				A32663A1289FC7CC00117AE6 /* Assets.xcassets in Resources */,
+				A31995AA288879B600EFE1A9 /* Preview Assets.xcassets in Resources */,
+				A31995A7288879B600EFE1A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A3266395289FC7CA00117AE6 /* Sources */ = {
+		A319959B288879B400EFE1A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32663AB289FC87A00117AE6 /* Model.swift in Sources */,
-				A32663B1289FCB0000117AE6 /* Daily.swift in Sources */,
-				A3F5B7F228A10D490089E0B7 /* AddHabit.swift in Sources */,
-				A3EAF8B628A188BA00D76182 /* HabitsView.swift in Sources */,
-				A326639F289FC7CA00117AE6 /* ContentView.swift in Sources */,
-				A32663AF289FCA2100117AE6 /* DetailHabitView.swift in Sources */,
-				A326639D289FC7CA00117AE6 /* HabitTrackerApp.swift in Sources */,
+				A3D2FEE5288AC8C6002E2FC5 /* LetterAnimations.swift in Sources */,
+				A31995A5288879B400EFE1A9 /* ContentView.swift in Sources */,
+				A31995B128887DAC00EFE1A9 /* TapButton.swift in Sources */,
+				A31995A3288879B400EFE1A9 /* AnimationsApp.swift in Sources */,
+				A3D2FEE7288AD01A002E2FC5 /* CustomTransitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A32663A5289FC7CC00117AE6 /* Debug */ = {
+		A31995AB288879B600EFE1A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +217,7 @@
 			};
 			name = Debug;
 		};
-		A32663A6289FC7CC00117AE6 /* Release */ = {
+		A31995AC288879B600EFE1A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,14 +271,14 @@
 			};
 			name = Release;
 		};
-		A32663A8289FC7CC00117AE6 /* Debug */ = {
+		A31995AE288879B600EFE1A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HabitTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Animations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JuliaAD.HabitTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = JuliaAD.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,14 +299,14 @@
 			};
 			name = Debug;
 		};
-		A32663A9289FC7CC00117AE6 /* Release */ = {
+		A31995AF288879B600EFE1A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HabitTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Animations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -335,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JuliaAD.HabitTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = JuliaAD.Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -346,25 +330,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3266394289FC7CA00117AE6 /* Build configuration list for PBXProject "HabitTracker" */ = {
+		A319959A288879B400EFE1A9 /* Build configuration list for PBXProject "Animations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A32663A5289FC7CC00117AE6 /* Debug */,
-				A32663A6289FC7CC00117AE6 /* Release */,
+				A31995AB288879B600EFE1A9 /* Debug */,
+				A31995AC288879B600EFE1A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A32663A7289FC7CC00117AE6 /* Build configuration list for PBXNativeTarget "HabitTracker" */ = {
+		A31995AD288879B600EFE1A9 /* Build configuration list for PBXNativeTarget "Animations" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A32663A8289FC7CC00117AE6 /* Debug */,
-				A32663A9289FC7CC00117AE6 /* Release */,
+				A31995AE288879B600EFE1A9 /* Debug */,
+				A31995AF288879B600EFE1A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A3266391289FC7CA00117AE6 /* Project object */;
+	rootObject = A3199597288879B400EFE1A9 /* Project object */;
 }

@@ -1,14 +1,14 @@
 //
-//  HabitTrackerApp.swift
-//  HabitTracker
+//  AnimationsApp.swift
+//  Animations
 //
-//  Created by Júlia on 7/8/22.
+//  Created by Júlia on 20/7/22.
 //
 
 import SwiftUI
 
 @main
-struct HabitTrackerApp: App {
+struct AnimationsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
