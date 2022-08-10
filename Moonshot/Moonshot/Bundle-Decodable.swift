@@ -21,6 +21,11 @@ extension Bundle {
         
         let decoder = JSONDecoder()
         
+        //Decode dates in a specific format
+        let formatter = DateFormatter()
+        formatter.dateFormat = "y-MM-dd"
+        decoder.dateDecodingStrategy = .formatted(formatter)
+        
         //Decodificamos data en un Map [String: Astronaut]
         guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle.")

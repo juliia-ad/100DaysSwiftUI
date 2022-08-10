@@ -1,18 +1,15 @@
 //
 //  ContentView.swift
-//  Moonshot
+//  CupcakeCorner
 //
-//  Created by Júlia on 23/7/22.
+//  Created by Júlia on 10/8/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.txt")
-    let missions: [Mission] = Bundle.main.decode("missions.txt")
-    
     var body: some View {
-        Text("\(missions.count)")
+        Text("Hello, world!")
             .padding()
     }
 }
