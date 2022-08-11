@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A35495C728A446410065553F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35495C628A446410065553F /* Order.swift */; };
+		A35495C928A44A4F0065553F /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35495C828A44A4F0065553F /* AddressView.swift */; };
+		A35495CC28A44D340065553F /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35495CB28A44D340065553F /* CheckoutView.swift */; };
 		A357AFBA28A3F1A500568ADC /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357AFB928A3F1A500568ADC /* CupcakeCornerApp.swift */; };
 		A357AFBC28A3F1A500568ADC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357AFBB28A3F1A500568ADC /* ContentView.swift */; };
 		A357AFBE28A3F1A700568ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A357AFBD28A3F1A700568ADC /* Assets.xcassets */; };
 		A357AFC128A3F1A700568ADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A357AFC028A3F1A700568ADC /* Preview Assets.xcassets */; };
+		A357AFC828A3FE8100568ADC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A357AFC728A3FE8100568ADC /* User.swift */; };
+		A3DC3F8628A533B4001C6F9C /* OrderStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DC3F8528A533B4001C6F9C /* OrderStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A35495C628A446410065553F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A35495C828A44A4F0065553F /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		A35495CB28A44D340065553F /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		A357AFB628A3F1A500568ADC /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A357AFB928A3F1A500568ADC /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		A357AFBB28A3F1A500568ADC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A357AFBD28A3F1A700568ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A357AFC028A3F1A700568ADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A357AFC728A3FE8100568ADC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3DC3F8528A533B4001C6F9C /* OrderStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A35495CA28A44D220065553F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A357AFBB28A3F1A500568ADC /* ContentView.swift */,
+				A35495C828A44A4F0065553F /* AddressView.swift */,
+				A35495CB28A44D340065553F /* CheckoutView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A357AFAD28A3F1A500568ADC = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				A357AFB928A3F1A500568ADC /* CupcakeCornerApp.swift */,
-				A357AFBB28A3F1A500568ADC /* ContentView.swift */,
+				A35495CA28A44D220065553F /* View */,
+				A357AFC928A3FE8600568ADC /* Model */,
 				A357AFBD28A3F1A700568ADC /* Assets.xcassets */,
 				A357AFBF28A3F1A700568ADC /* Preview Content */,
 			);
@@ -65,6 +86,16 @@
 				A357AFC028A3F1A700568ADC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A357AFC928A3FE8600568ADC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3DC3F8528A533B4001C6F9C /* OrderStruct.swift */,
+				A357AFC728A3FE8100568ADC /* User.swift */,
+				A35495C628A446410065553F /* Order.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,11 @@
 			files = (
 				A357AFBC28A3F1A500568ADC /* ContentView.swift in Sources */,
 				A357AFBA28A3F1A500568ADC /* CupcakeCornerApp.swift in Sources */,
+				A3DC3F8628A533B4001C6F9C /* OrderStruct.swift in Sources */,
+				A35495CC28A44D340065553F /* CheckoutView.swift in Sources */,
+				A35495C728A446410065553F /* Order.swift in Sources */,
+				A357AFC828A3FE8100568ADC /* User.swift in Sources */,
+				A35495C928A44A4F0065553F /* AddressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
