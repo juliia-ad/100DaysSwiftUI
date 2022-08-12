@@ -3,8 +3,8 @@
 
 - Project 6: Animations
 - Project 7: ExpensesApp
-- Project 8: Moonshot
-- Project 9: Drawing
+- Project 8: Moonshot (Navigation between views)
+- Project 9: Drawing (Creation of personalised shapes)
 - Challenge: HabitTracker
-- Project 10: CupcakeCorner
-
+- Project 10: CupcakeCorner (Coding data and Internet transmissions)
+- Project 11: Bookworm (Core data)
