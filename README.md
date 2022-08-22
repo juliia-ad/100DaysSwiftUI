@@ -8,3 +8,4 @@
 - Challenge: HabitTracker
 - Project 10: CupcakeCorner (Coding data and Internet transmissions)
 - Project 11: Bookworm (Core data)
+- Milestone: Challenge10-12 (Part1: OnlineFetching, Part2: CoreData)
