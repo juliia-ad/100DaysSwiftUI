@@ -104,7 +104,7 @@ struct EditView: View {
             //Dictionnary: [Key: value] -> .values return array of all the values.
             pages = items.query.pages.values.sorted()
             loadingState = .loaded
-        } catch {
+        } catch {
             loadingState = .failed
         }
     }

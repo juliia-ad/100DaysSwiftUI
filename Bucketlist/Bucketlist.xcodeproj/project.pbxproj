@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A37C376A28BCAA4F002364B3 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C376928BCAA4F002364B3 /* ContentView-ViewModel.swift */; };
+		A37C376D28BCB0B8002364B3 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37C376C28BCB0B8002364B3 /* FileManager-DocumentsDirectory.swift */; };
 		A3ED185D28BB6744005F83B0 /* BucketlistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED185C28BB6744005F83B0 /* BucketlistApp.swift */; };
 		A3ED185F28BB6744005F83B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ED185E28BB6744005F83B0 /* ContentView.swift */; };
 		A3ED186128BB6747005F83B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3ED186028BB6747005F83B0 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A37C376928BCAA4F002364B3 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		A37C376C28BCB0B8002364B3 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		A3ED185928BB6744005F83B0 /* Bucketlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bucketlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3ED185C28BB6744005F83B0 /* BucketlistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketlistApp.swift; sourceTree = "<group>"; };
 		A3ED185E28BB6744005F83B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A37C376B28BCAA54002364B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A37C376928BCAA4F002364B3 /* ContentView-ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A3ED185028BB6744005F83B0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A3ED185C28BB6744005F83B0 /* BucketlistApp.swift */,
+				A37C376B28BCAA54002364B3 /* ViewModel */,
 				A3ED186F28BB7938005F83B0 /* Views */,
 				A3ED186C28BB6E6D005F83B0 /* Model */,
 				A3ED186028BB6747005F83B0 /* Assets.xcassets */,
@@ -79,6 +92,7 @@
 			children = (
 				A3ED186A28BB6E68005F83B0 /* Location.swift */,
 				A3ED187028BB8415005F83B0 /* Result.swift */,
+				A37C376C28BCB0B8002364B3 /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3ED185F28BB6744005F83B0 /* ContentView.swift in Sources */,
+				A37C376D28BCB0B8002364B3 /* FileManager-DocumentsDirectory.swift in Sources */,
+				A37C376A28BCAA4F002364B3 /* ContentView-ViewModel.swift in Sources */,
 				A3ED187128BB8415005F83B0 /* Result.swift in Sources */,
 				A3ED186B28BB6E68005F83B0 /* Location.swift in Sources */,
 				A3ED186E28BB7935005F83B0 /* EditView.swift in Sources */,
@@ -297,6 +313,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bucketlist/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bucketlist/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -325,6 +343,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Bucketlist/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bucketlist/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock your places";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
