@@ -9,19 +9,9 @@ import SwiftUI
 
 struct EditView: View {
     @Environment(\.dismiss) var dismiss
-    var location: Location
+    
+    @StateObject private var vm: ViewModel
     var onSave: (Location) -> Void
-    
-    //Variables to change while editing the TextField
-    @State private var name: String
-    @State private var description: String
-    
-    enum LoadingState {
-        case loading, loaded, failed
-    }
-    
-    @State private var loadingState = LoadingState.loading
-    @State private var pages = [Page]()
     
 
     /*
@@ -30,32 +20,39 @@ struct EditView: View {
         Avisa a Swift que debe guardar la closure en memoria para ser usada más tarde
      */
     init(location: Location, onSave: @escaping (Location) -> Void) {
+        _vm = StateObject(wrappedValue: ViewModel(location: location))
+        self.onSave = onSave
+        
+        /*
+        CODE BEFORE CREATING VIEW MODEL
         self.location = location
         self.onSave = onSave
         
         /*
          UNDERSCORE ANNOTATION:
+         Used because we want to CREATE and initalize the property wrapper.
             name: refers to the value inside the property wrapper
             _name: refers to the property wrapper
          */
         _name = State(initialValue: location.name)
         _description = State(initialValue: location.description)
+         */
     }
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Place name", text: $name)
-                    TextField("Description", text: $description)
+                    TextField("Place name", text: $vm.name)
+                    TextField("Description", text: $vm.description)
                 }
                 
                 Section("Nearby...") {
-                    switch loadingState {
+                    switch vm.loadingState {
                     case .loading:
                         Text("Loading...")
                     case .loaded:
-                        ForEach(pages, id: \.pageid) { page in
+                        ForEach(vm.pages, id: \.pageid) { page in
                             Text(page.title)
                                 .font(.headline)
                             + Text(": ") +
@@ -71,41 +68,15 @@ struct EditView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save"){
-                        var newLocation = location  //Copy of the existing location
-                        newLocation.id = UUID()    //We need to change the id, so the MapAnnotation will notify the changes
-                        newLocation.name = name
-                        newLocation.description = description
-                        
+                        let newLocation = vm.createNewLocation()
                         onSave(newLocation)
                         dismiss()
                     }
                 }
             }
             .task { //trigger the function as soon as the view appears.
-                await fetchNearbyPlaces()
+                await vm.fetchNearbyPlaces()
             }
-        }
-    }
-    
-    func fetchNearbyPlaces() async {
-        //Wikipedia url
-        let urlString = "https://en.wikipedia.org/w/api.php?ggscoord=\(location.coordinate.latitude)%7C\(location.coordinate.longitude)&action=query&prop=coordinates%7Cpageimages%7Cpageterms&colimit=50&piprop=thumbnail&pithumbsize=500&pilimit=50&wbptterms=description&generator=geosearch&ggsradius=10000&ggslimit=50&format=json"
-        
-        guard let url = URL(string: urlString) else {
-            print("Invalid URL")
-            return
-        }
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            
-            let items = try JSONDecoder().decode(Result.self, from: data)
-            
-            //Dictionnary: [Key: value] -> .values return array of all the values.
-            pages = items.query.pages.values.sorted()
-            loadingState = .loaded
-        } catch {
-            loadingState = .failed
         }
     }
     

@@ -35,6 +35,9 @@ struct ContentView: View {
                         Text(item.amount, format: .currency(code: "EUR"))
                             .foregroundColor(priceColor(item.amount))
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel("\(item.name), \(item.amount.formatted(.currency(code: "EUR")))")
+                    .accessibilityHint(item.type)
                 }
                 .onDelete(perform: removeItems)
             }

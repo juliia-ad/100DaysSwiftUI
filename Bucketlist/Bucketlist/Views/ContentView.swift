@@ -48,13 +48,13 @@ struct ContentView: View {
                             vm.addLocation()
                         } label: {
                             Image(systemName: "plus")
+                                .padding()
+                                .background(.black.opacity(0.75))
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .clipShape(Circle())
+                                .padding(.trailing)
                         }
-                        .padding()
-                        .background(.black.opacity(0.75))
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .clipShape(Circle())
-                        .padding(.trailing)
                     }
                     
                 }
@@ -65,13 +65,20 @@ struct ContentView: View {
                 }
             }
         } else {
-            Button("Unlock Places"){
-                vm.authenticate()
+            ZStack {
+                Button("Unlock Places"){
+                    vm.authenticate()
+                }
+                .padding()
+                .background(.blue)
+                .foregroundColor(.white)
+                .clipShape(Capsule())
             }
-            .padding()
-            .background(.blue)
-            .foregroundColor(.white)
-            .clipShape(Capsule())
+            .alert("Authentication Error", isPresented: $vm.showingAuthenticationError) {
+                Button("Ok") { }
+            } message: {
+                Text(vm.authenticationError)
+            }
         }
     }
 }
