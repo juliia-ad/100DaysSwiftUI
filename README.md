@@ -12,3 +12,4 @@
 - Milestone: Challenge10-12 (Part1: OnlineFetching, Part2: CoreData)
 - Project 13: InstaFilter (CoreImage, CIFilters, UIKit images)
 - Project 14: Bucketlist (MapKit, dowloading internet data, FaceID and TouchID)
+- Project 15: Accessibility (Retouched projects to make them accessibility friendly)
