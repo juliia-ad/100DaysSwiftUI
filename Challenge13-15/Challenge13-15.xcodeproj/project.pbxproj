@@ -19,13 +19,15 @@
 		A3B8E9D828BF4C6B00B94BBA /* VM-ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8E9D728BF4C6B00B94BBA /* VM-ContentView.swift */; };
 		A3B8E9DB28BF564F00B94BBA /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8E9DA28BF564F00B94BBA /* AddContactView.swift */; };
 		A3B8E9DD28BF5A9A00B94BBA /* VM-AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B8E9DC28BF5A9A00B94BBA /* VM-AddContactView.swift */; };
+		A3C47E8528C11B5400DBC4D7 /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C47E8428C11B5400DBC4D7 /* LocationFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A37C20D228C0B1A100B7A8C0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		A37848DE28C1E88300056BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A37C20D228C0B1A100B7A8C0 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageView.swift; path = View/ImageView.swift; sourceTree = "<group>"; };
 		A3B8E9BA28BF42B900B94BBA /* Challenge13-15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Challenge13-15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B8E9BD28BF42B900B94BBA /* Challenge13_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge13_15App.swift; sourceTree = "<group>"; };
-		A3B8E9BF28BF42B900B94BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3B8E9BF28BF42B900B94BBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = View/ContentView.swift; sourceTree = "<group>"; };
 		A3B8E9C128BF42BB00B94BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3B8E9C428BF42BB00B94BBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A3B8E9CB28BF431D00B94BBA /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
@@ -33,8 +35,9 @@
 		A3B8E9D028BF43B400B94BBA /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		A3B8E9D328BF46D500B94BBA /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		A3B8E9D728BF4C6B00B94BBA /* VM-ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VM-ContentView.swift"; sourceTree = "<group>"; };
-		A3B8E9DA28BF564F00B94BBA /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
+		A3B8E9DA28BF564F00B94BBA /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddContactView.swift; path = View/AddContactView.swift; sourceTree = "<group>"; };
 		A3B8E9DC28BF5A9A00B94BBA /* VM-AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VM-AddContactView.swift"; sourceTree = "<group>"; };
+		A3C47E8428C11B5400DBC4D7 /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		A3B8E9BC28BF42B900B94BBA /* Challenge13-15 */ = {
 			isa = PBXGroup;
 			children = (
+				A37848DE28C1E88300056BC8 /* Info.plist */,
 				A3B8E9BD28BF42B900B94BBA /* Challenge13_15App.swift */,
 				A3B8E9CD28BF436100B94BBA /* Model */,
 				A3B8E9D928BF4C7000B94BBA /* ViewModel */,
@@ -92,6 +96,7 @@
 				A3B8E9CE28BF439E00B94BBA /* ImagePicker.swift */,
 				A3B8E9D028BF43B400B94BBA /* ImageSaver.swift */,
 				A3B8E9D328BF46D500B94BBA /* FileManager-DocumentsDirectory.swift */,
+				A3C47E8428C11B5400DBC4D7 /* LocationFetcher.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,7 +117,7 @@
 				A3B8E9D728BF4C6B00B94BBA /* VM-ContentView.swift */,
 				A3B8E9DC28BF5A9A00B94BBA /* VM-AddContactView.swift */,
 			);
-			name = ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +194,7 @@
 				A3B8E9D828BF4C6B00B94BBA /* VM-ContentView.swift in Sources */,
 				A3B8E9D428BF46D500B94BBA /* FileManager-DocumentsDirectory.swift in Sources */,
 				A3B8E9DD28BF5A9A00B94BBA /* VM-AddContactView.swift in Sources */,
+				A3C47E8528C11B5400DBC4D7 /* LocationFetcher.swift in Sources */,
 				A3B8E9CC28BF431E00B94BBA /* Contact.swift in Sources */,
 				A3B8E9CF28BF439E00B94BBA /* ImagePicker.swift in Sources */,
 				A3B8E9D128BF43B400B94BBA /* ImageSaver.swift in Sources */,
@@ -326,6 +332,8 @@
 				DEVELOPMENT_TEAM = 4JQWWK9Z6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge13-15/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location to view picture position.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +363,8 @@
 				DEVELOPMENT_TEAM = 4JQWWK9Z6A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Challenge13-15/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Enable location to view picture position.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

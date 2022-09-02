@@ -14,16 +14,16 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(vm.contacts) { contact in
+                    ForEach(vm.sortedContacts()) { contact in
                         NavigationLink {
-                            ImageView(image: vm.getImage(imagePath: contact.profilePicture))
+                            ImageView(image: vm.getImage(imagePath: contact.profilePicture), mapRegion: vm.makeMapRegion(contact: contact), contact: contact)
                         } label: {
-                            HStack {
+                            HStack(spacing: 20) {
                                 vm.getImage(imagePath: contact.profilePicture)?
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()
                                     .clipShape(Circle())
-                                    .frame(width: 100)
+                                    .frame(width: 70, height: 70)
                                 Text(contact.firstName + " " + contact.secondName)
                             }
                         }
@@ -37,6 +37,7 @@ struct ContentView: View {
                 .listStyle(.plain)
                 
             }
+            .padding(.top)
             .navigationTitle("Meeting contacts")
             .toolbar {
                 ToolbarItem {
@@ -45,6 +46,9 @@ struct ContentView: View {
                     } label: {
                         Image(systemName: "plus")
                     }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
                 }
             }
             .sheet(isPresented: $vm.showingAddContact) {

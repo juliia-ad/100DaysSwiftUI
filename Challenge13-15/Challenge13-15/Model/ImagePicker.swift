@@ -11,8 +11,14 @@ import PhotosUI
 import Foundation
 
 struct ImagePicker: UIViewControllerRepresentable {
+    
+    /*enum ImageSourceType {
+        case camera, library
+    }*/
 
     @Binding var image: UIImage?
+    
+    //var sourceType: ImageSourceType = .library
     
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration()
@@ -20,8 +26,8 @@ struct ImagePicker: UIViewControllerRepresentable {
         
         let picker = PHPickerViewController(configuration: config)  //creates the viewController of the picker
         picker.delegate = context.coordinator
-        return picker
         
+        return picker
     }
     
     func updateUIViewController(_ uiViewController: PHPickerViewController, context: Context) {

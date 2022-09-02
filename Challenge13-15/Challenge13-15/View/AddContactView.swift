@@ -10,6 +10,7 @@ import SwiftUI
 struct AddContactView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject private var vm = ViewModel()
+
     
     var onSave: (Contact) -> Void
     
@@ -60,6 +61,9 @@ struct AddContactView: View {
             if let UIimage = vm.UIimage {
                 vm.image = Image(uiImage: UIimage)
             }
+        }
+        .onAppear {
+            vm.locationFetcher.start()
         }
     }
 }

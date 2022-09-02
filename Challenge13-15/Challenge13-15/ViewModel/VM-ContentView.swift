@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
 extension ContentView {
     @MainActor class ViewModel: ObservableObject {
@@ -14,6 +15,7 @@ extension ContentView {
         @Published var showingAddContact = false
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("Contacts")
+        
         
         
         //We load contacts from the file fileManager. If not, we use empty array.
@@ -52,6 +54,25 @@ extension ContentView {
         
         func deleteContact(at offset: Int){
             contacts.remove(at: offset)
+        }
+        
+        func getCoordinate(contact: Contact) -> CLLocationCoordinate2D{
+            CLLocationCoordinate2D(latitude: contact.latitude, longitude: contact.longitude)
+        }
+        
+        func makeMapRegion(contact: Contact) -> MKCoordinateRegion {
+            let coordinate = getCoordinate(contact: contact)
+            return MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25))
+        }
+        
+        func sortedContacts() -> [Contact] {
+            return contacts.sorted {
+                if $0.firstName == $1.firstName {
+                    return $0.secondName < $1.secondName
+                } else {
+                    return $0.firstName < $1.firstName
+                }
+            }
         }
         
         
